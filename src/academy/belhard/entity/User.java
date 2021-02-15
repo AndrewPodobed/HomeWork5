@@ -16,8 +16,9 @@ public class User extends Person {
 
     }
 
-    public boolean equals(User user) {
-        return this.password == user.password;
+    public boolean isPasswordCorrect(String password){
+        return this.password.equals(password);
+
 
     }
 

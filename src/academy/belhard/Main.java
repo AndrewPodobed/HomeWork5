@@ -11,13 +11,15 @@ public class Main {
         User user3 = new User("Andrew","Winston","a.winston@mail.ru", "@butlfeel}}");
 
         System.out.println(user1.getFullInfo());
-        System.out.println("Password is " + user1.equals(user1));
+        System.out.println(user1.isPasswordCorrect("qwerty123"));
+
         System.out.println("");
         System.out.println(user2.getFullInfo());
-        System.out.println("Password is " + user2.equals(user2));
+        System.out.println(user2.isPasswordCorrect("forever"));
+
         System.out.println("");
         System.out.println(user3.getFullInfo());
-        System.out.println("Password is " + user3.equals(user3));
+        System.out.println(user3.isPasswordCorrect("@butlfeel}}"));
 
 
 
